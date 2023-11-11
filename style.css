@@ -1,15 +1,21 @@
 html{
-   box-sizing: border-box;
+  box-sizing: border-box;
+  height: 100%;
 }
 
-*,*::after, *::before{
-   box-sizing: inherit;
-   margin: 0;
-   padding: 0;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Playfair Display', sans-serif;
 }
 
-html, body {
-   height: 100%;
+body{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #FFF;
 }
 
 ul{
@@ -32,19 +38,13 @@ a{
    padding: 0 10px;
 }
 
-body{
-   font-family: 'Montserrat', sans-serif;
-   font-size: 20px;
-   font-weight: 400;
-   background: #FFF;
-}
 
 .header__inner{
-   padding-top: 21px;
-   padding-bottom: 22px;
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
+  padding-top: 21px;
+  padding-bottom: 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .menu__list{
@@ -55,146 +55,159 @@ body{
 .menu__list-link{
    color: #FFC9C9;
    font-weight: 400;
+   font-family: 'Montserrat', sans-serif;
+   font-size: 20px;
+   font-weight: 400;
 }
 
-.footer{
-   background-color: #d9d9d9;
-   opacity: 0,5;
-   height: 150px;
+
+section{
+  position: relative;  
+  height: 590px;
+  width: 1140px;
+  display: flex;
+  align-items: center;
 }
 
-.main{
-   flex-grow: 1;
-}
-
-.container{
-   max-height: 333;
-   padding-top: 50px;
-
-}
-.top{
-   font-family: 'Playfair Display', sans-serif;
-   text-transform: uppercase;
-   font-weight: 600;
-}
-
-.title{
-   color: #FFC9C9;
-   opacity: 0.3;
-   font-size: 250px;
-   position: relative;
-}
-
-.title2{
-   padding-top: 166px;
-   color: #4036ED;
-   font-size: 38px;
-   position: absolute;
-   top: 216px;
-}
-
-.slider{
-   position: relative;
-   height: 450px;
-   width: 1075px;
-   display: flex;
-   align-items: center;
+.swiper{
+  width: 940px;
 }
 
 .card{
-   position: relative;
-   background: #F5F5F5CC;
-   border-radius: 62.002px;
-   height: 520px;
-   width: 320px;
-   margin: 20px 20px;
-   border: 2.48px solid #4036ED;
+  position: relative;
+  background: #fff;
+  overflow: hidden;
+  border-radius: 62px;
+  height: 520px;
+  width: 320px;
+  margin: 20px 0;
+  border: 3px solid #4036ED ;
+
 }
 
 .card::before{
-   content:"";
-   position: absolute;
+  content: "";
+  position: absolute;
+  height: 40%;
+  width: 100%;
+  background: white;
+ 
 }
 
-.card .card__content{
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   padding: 30px;
-   position: relative;
-   z-index: 100;
+.card .card-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  position: relative;
+  z-index: 100;
 }
 
 section .card .image{
-   height: 250px;
-   width: 250px;
-   border-radius: 10px;
-   margin-top: 40px;
+  height: 250px;
+  width: 250px;
+  border-radius: 10%;
+  margin-top: 30px;
 }
 
 section .card .image img{
-   height: 100%;
-   width: 100%;
-   object-fit: cover;
-   border-radius: 10px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10%;
+  border: 3px solid #fff;
 }
 
 .card .icons{
-   position: absolute;
-   width: 38px;
-   height: 33px;
-   top:15px;
-   display: flex;
-   align-items: center;
+  position: absolute;
+  top: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
-.card .icons img{
-   height: 100%;
-   width: 100%;
-   object-fit: cover;
+.card .name-age{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+  color: #4036ED;
+  font-family: 'Playfair Display', sans-serif;
+} 
+
+.name-age .name{
+  font-size: 24px;
+  font-weight: 500;
 }
 
-.card .name__age{
-   white-space: nowrap;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   margin-top: 19px;
-}
-
-.name__age .name__age{
-   font-family: Playfair Display;
-   font-size: 24px;
-   font-weight: 500;
-   color: #4036ED;
-   text-align: center;
+.chat{
+  position: absolute;
+  right:0;
+  top:330px;
+  margin-right:5px;
 }
 
 .card .button{
-   width: 150px;
-   height: 50px;
-   display: flex;
-   justify-content: space-around;
-   margin-top: 20px;
+  width: 100%;
+  justify-content: space-around;
+  margin-top: 45px;
+  user-select: none;
+  line-height: 1.5;
+  text-align: center;
+  gap:10px;
+  display: flex;
+  justify-content: space-around;
+  
 }
 
-.button button:hover{
-   background: #4036ED;
+.card .Profile{
+  background: #4036ED;
+  color: #fff;
+}
+
+.card .Delete{
+  background: #FF6668;
+  color: #fff;
 }
 
 .card .button button{
-   background: #4036ED;
-   outline: none;
-   border: none;
-   color: #FFF;
-   padding: 19px 42px;
-   text-align: center;
-   gap:10px;
-   font-family: Montserrat;
-   font-size: 16px;
-   font-weight: 500;
-   border-radius: 100px;
-   transition: all 0.3s ease;
-   cursor: pointer;
+  outline: none;
+  border: none;
+  padding: 15px 42px;
+  border-radius: 100px;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Montserrat;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.button button:hover{
+  opacity: .8;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.swiper-pagination{
+  position: absolute;
+  top: 450px;
+}
+
+.swiper-pagination-bullet{
+  height: 7px;
+  width: 26px;
+  border-radius: 25px;
+  background: #4036ED;
+}
+
+.swiper-button-next, .swiper-button-prev{
+  color: #4036ED;
+  opacity: .8;
+  transition: all 0.3s ease;
+}
+
+.swiper-button-next:hover, .swiper-button-prev:hover{
+  opacity: .5;
+
 }
 
