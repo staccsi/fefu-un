@@ -187,6 +187,99 @@ h3 {
   margin-bottom: 50px 
 }
 
+
+.container_b{
+  padding-top: 50px;
+  padding-right:500px;
+}
+
+.anketa{
+  display: block;
+  margin: 0 auto;
+
+}
+.look{
+  font-family: 'Playfair Display', sans-serif;
+  font-weight: 500;
+  color: #9596FF;
+  font-size: 24px;
+  float: left;
+	width: 48%;
+  margin-top: 30px;
+  
+}
+.love, .friendship, .cooperation, .Arias, .Leo, .Sagittarius, .Taurus, .Virgo, .Capricorn, .Pisces,
+.Scorpio, .Cancer, .Aquarius, .Libra, .Gemini, .Alcohol, .Nicotine, 
+.healthy, .h-1, .h-2, .h-3, .h-4, .h-5, .h-6, .h-7, .h-8, .h-9, .h-10, .h-11, .h-12{
+  height: 50px; 
+  width: 150px; 
+  border-radius: 100px; 
+  padding: 19px 62px; 
+  justify-content: center; 
+  align-items: center;
+  gap: 10px;
+  color: #FFF;
+  display: flex;
+  font-size: 18px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  border: none;
+}
+
+button:hover{
+  opacity: 0.8;
+}
+.Arias, .Leo, .Sagittarius, .Taurus, .Virgo, .Capricorn, .Pisces,
+.Scorpio, .Cancer, .Aquarius, .Libra, .Gemini{
+  background-color: #9596FF; 
+}
+
+.love{
+  background-color:#FFC9C9 ; 
+
+ }
+ .friendship{
+  background-color: #FCD16C;  
+ 
+ }
+ .cooperation{
+  background-color: #9596FF; 
+
+ }
+
+ 
+.Alcohol, .Nicotine, .healthy{
+  background-color: #FCD16C; 
+
+}
+
+.bad_hab, .hobby, .sign, .looking{
+  width: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+ .h-1, .h-2, .h-7, .h-8{
+  background-color: #FFC9C9;  
+ }
+
+ .h-3, .h-4, .h-9, .h-10{
+  background-color: #FCD16C; 
+ 
+ }
+
+ .h-5, .h-6, .h-11, .h-12{
+  background-color: #9596FF; ; 
+ }
+
+@media(max-width:986px){
+  .bad_hab, .hobby, .sign, .looking {
+    width: 798px;
+  }
+}
+
+
 @media(max-width:768px){
   .slide-content{
     margin: 0 10px;
@@ -195,10 +288,22 @@ h3 {
     display: none;
   }
 }
+
+@media(max-width:664px){
+  .bad_hab, .hobby, .sign, .looking {
+    width: 605px;
+  }
+}
  
   
 @media (max-width:520px) {
-  
+
+  .look{
+    font-size: 16px;
+  }
+  .bad_hab, .hobby, .sign, .looking {
+    width: 473px;
+  }
   .logo__img{
     height: 30px;
     width: 30px;
@@ -230,3 +335,24 @@ h3 {
     width: 226px;
   }
 }
+
+/*span {
+  width: 50px;
+  height: 50px;
+  background: url(../images/snow.png);
+  background-size: cover;
+  pointer-events: none;
+  position: absolute;
+  animation: rgb(255, 255, 255) 2s linear forwards;
+}
+@keyframes snow {
+  0% {
+    opacity: 1;
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    transform: translate(50%, 1000%);
+    filter: hue-rotate(360deg);
+    opacity: 0;
+  }
+}*/
