@@ -325,6 +325,28 @@ a{
 
 }
 
+/*span {
+  width: 50px;
+  height: 50px;
+  background: url(../images/snow.png);
+  background-size: cover;
+  pointer-events: none;
+  position: absolute;
+  animation: rgb(255, 255, 255) 2s linear forwards;
+}
+@keyframes snow {
+  0% {
+    opacity: 1;
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    transform: translate(50%, 1000%);
+    filter: hue-rotate(360deg);
+    opacity: 0;
+  }
+}*/
+
+
 
 
 
